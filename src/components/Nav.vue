@@ -1,10 +1,15 @@
 <template>
-  <div class="hello"></div>
+  <nav>
+    <!-- <div class="hello">{{ msg }}</div> -->
+    <img src="../assets/me.png" alt="" />
+    <h1>FRONT-END DEVELOPER & DESIGNER</h1>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Nav",
+
   props: {
     msg: String,
   },
