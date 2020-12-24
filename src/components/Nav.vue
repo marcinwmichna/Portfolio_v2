@@ -37,7 +37,6 @@ nav {
     padding: 0.55rem;
     margin-top: 9em;
     width: 7.7em;
-    // opacity: 0.9;
   }
   .imageDesc {
     margin-top: 0.3rem;
