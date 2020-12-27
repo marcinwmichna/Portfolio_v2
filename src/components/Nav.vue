@@ -19,9 +19,6 @@ export default {
     NavDescription,
   },
   name: "Nav",
-  // props: {
-  //   msg: String,
-  // },
 };
 </script>
 
