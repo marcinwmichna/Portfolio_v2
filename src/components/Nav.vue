@@ -1,22 +1,30 @@
 <template>
   <nav>
-    <!-- <div class="hello">{{ msg }}</div> -->
     <img class="img_me" src="../assets/me.png" alt="" />
     <Nav-description class="imageDesc" msg="MARCIN MICHNA"></Nav-description>
     <h1>FRONT-END DEVELOPER & DESIGNER</h1>
-    <Nav-description
-      class="headerDesc"
+    <nav-description
+      class="headerDescription"
       msg="I'LL MAKE YOUR DREAM WEBSITE COME TRUE"
-    ></Nav-description>
+    ></nav-description>
+    <div class="buttonsWrapper">
+      <regular-button
+        class="navButton"
+        msg="SEE MY LATEST WORK"
+      ></regular-button>
+      <nav-description class="navButton" msg="CONTACT ME"></nav-description>
+    </div>
   </nav>
 </template>
 
 <script>
-import NavDescription from "@/components/NavDescription.vue";
+import navDescription from "@/components/NavDescription.vue";
+import regularButton from "@/components/RegularButton.vue";
 
 export default {
   components: {
-    NavDescription,
+    navDescription,
+    regularButton,
   },
   name: "Nav",
 };
@@ -45,8 +53,14 @@ nav {
     color: #353535;
     font-size: 4.6rem;
   }
-  .headerDesc {
+  .headerDescription {
     margin-top: -3.8rem;
+  }
+  .buttonsWrapper {
+    display: flex;
+  }
+
+  .navButton {
   }
 }
 </style>
