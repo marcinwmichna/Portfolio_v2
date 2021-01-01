@@ -9,7 +9,6 @@
     ></navDescription>
     <div class="buttonsWrapper">
       <regularButton msg="SEE MY LATEST WORK"></regularButton>
-
       <mainButton msg="CONTACT ME"></mainButton>
     </div>
     <img src="../assets/Arrow.svg" alt="" />
