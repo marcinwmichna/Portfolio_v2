@@ -41,7 +41,8 @@
         {
           "avoidEscape": true
         }
-      ]
+      ],
+      "camelcase": [1, {"properties": "never"}]
     }
   },
   "browserslist": [

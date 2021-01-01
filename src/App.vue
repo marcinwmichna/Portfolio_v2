@@ -30,14 +30,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   text-align: center;
-  color: #2c3e50;
-
-  nav {
-    align-content: center;
-    font-family: "Source Serif Pro", serif;
-    font: bold;
-    // display: flex;
-    // flex-direction: column;
-  }
+  // color: #2c3e50;
 }
 </style>
