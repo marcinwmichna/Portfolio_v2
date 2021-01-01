@@ -1,38 +1,39 @@
 <template>
   <nav>
     <img class="img_me" src="../assets/me.png" alt="" />
-    <Nav-description class="imageDesc" msg="MARCIN MICHNA"></Nav-description>
+    <navDescription class="imageDesc" msg="MARCIN MICHNA"></navDescription>
     <h1>FRONT-END DEVELOPER & DESIGNER</h1>
-    <nav-description
+    <navDescription
       class="headerDescription"
       msg="I'LL MAKE YOUR DREAM WEBSITE COME TRUE"
-    ></nav-description>
+    ></navDescription>
     <div class="buttonsWrapper">
-      <regular-button
-        class="navButton"
-        msg="SEE MY LATEST WORK"
-      ></regular-button>
-      <nav-description class="navButton" msg="CONTACT ME"></nav-description>
+      <regularButton msg="SEE MY LATEST WORK"></regularButton>
+
+      <mainButton msg="CONTACT ME"></mainButton>
     </div>
+    <img src="../assets/Arrow.svg" alt="" />
   </nav>
 </template>
 
 <script>
 import navDescription from "@/components/NavDescription.vue";
 import regularButton from "@/components/RegularButton.vue";
+import mainButton from "@/components/MainButton.vue";
 
 export default {
   components: {
     navDescription,
     regularButton,
+    mainButton,
   },
   name: "Nav",
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 nav {
+  height: 100vh;
   .img_me {
     background-image: url("../assets/Ellipse1.svg");
     background-repeat: no-repeat;
@@ -52,15 +53,17 @@ nav {
     font: bold;
     color: #353535;
     font-size: 4.6rem;
+    margin-bottom: 0;
   }
   .headerDescription {
-    margin-top: -3.8rem;
+    margin-top: 0;
   }
   .buttonsWrapper {
+    width: fit-content;
     display: flex;
-  }
-
-  .navButton {
+    margin: 7rem auto 15rem auto;
+    justify-content: space-around;
+    margin-top: 7rem;
   }
 }
 </style>
