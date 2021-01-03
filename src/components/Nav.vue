@@ -60,9 +60,9 @@ nav {
   .buttonsWrapper {
     width: fit-content;
     display: flex;
-    margin: 7rem auto 15rem auto;
+    margin: 12rem auto 15rem auto;
     justify-content: space-around;
-    margin-top: 7rem;
+    align-content: center;
   }
 }
 </style>
