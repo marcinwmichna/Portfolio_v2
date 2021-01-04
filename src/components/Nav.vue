@@ -11,7 +11,7 @@
       <regularButton msg="SEE MY LATEST WORK"></regularButton>
       <mainButton msg="CONTACT ME"></mainButton>
     </div>
-    <img src="../assets/Arrow.svg" alt="" />
+    <img class="arrow" src="../assets/Arrow.svg" alt="" />
   </nav>
 </template>
 
@@ -32,11 +32,13 @@ export default {
 
 <style scoped lang="scss">
 nav {
-  height: 100vh;
+  text-align: center;
+  // position: relative;
+  // height: 90vh;
   .img_me {
     background-image: url("../assets/Ellipse1.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     background-size: 99%;
     background-position: center;
     padding: 0.55rem;
@@ -61,8 +63,14 @@ nav {
     width: fit-content;
     display: flex;
     margin: 12rem auto 15rem auto;
+    // margin: 12rem auto 0 auto;
     justify-content: space-around;
     align-content: center;
+  }
+  .arrow {
+    margin-bottom: 2rem;
+    // position: absolute;
+    // bottom: 5rem;
   }
 }
 </style>
