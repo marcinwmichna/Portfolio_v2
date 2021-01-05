@@ -51,7 +51,7 @@ nav {
   h1 {
     align-content: center;
     font-family: "Source Serif Pro", serif;
-    font: bold;
+    // font: bold;
     color: #353535;
     font-size: 4.6rem;
     margin-bottom: 0;

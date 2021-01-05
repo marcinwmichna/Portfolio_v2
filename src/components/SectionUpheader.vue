@@ -14,6 +14,8 @@ h3 {
   font-family: "Hind", serif;
   font-weight: 300;
   font-size: 1rem;
+  padding-top: 4rem;
+  color: #5a6fe0;
   margin: 0;
 }
 </style>
