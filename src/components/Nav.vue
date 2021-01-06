@@ -3,9 +3,13 @@
     <img class="img_me" src="../assets/me.png" alt="" />
     <navDescription class="imageDesc" msg="MARCIN MICHNA"></navDescription>
     <h1>FRONT-END DEVELOPER & DESIGNER</h1>
-    <navDescription
+    <!-- <navDescription
       class="headerDescription"
       msg="I'LL MAKE YOUR DREAM WEBSITE COME TRUE"
+    ></navDescription> -->
+    <navDescription
+      class="headerDescription"
+      msg="LET'S CREATE UNIQUE WEB & GRAPHIC EXPERIENCE"
     ></navDescription>
     <div class="buttonsWrapper">
       <regularButton msg="SEE MY LATEST WORK"></regularButton>
@@ -33,12 +37,9 @@ export default {
 <style scoped lang="scss">
 nav {
   text-align: center;
-  // position: relative;
-  // height: 90vh;
   .img_me {
     background-image: url("../assets/Ellipse1.svg");
     background-repeat: no-repeat;
-    // background-size: cover;
     background-size: 99%;
     background-position: center;
     padding: 0.55rem;
@@ -51,7 +52,6 @@ nav {
   h1 {
     align-content: center;
     font-family: "Source Serif Pro", serif;
-    // font: bold;
     color: #353535;
     font-size: 4.6rem;
     margin-bottom: 0;
@@ -63,14 +63,11 @@ nav {
     width: fit-content;
     display: flex;
     margin: 12rem auto 15rem auto;
-    // margin: 12rem auto 0 auto;
     justify-content: space-around;
     align-content: center;
   }
   .arrow {
     margin-bottom: 2rem;
-    // position: absolute;
-    // bottom: 5rem;
   }
 }
 </style>
