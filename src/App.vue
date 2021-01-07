@@ -2,16 +2,19 @@
   <div id="app">
     <!-- <Nav msg="Welcome to Your Vue.js App" /> -->
     <Nav></Nav>
+    <TheProcess></TheProcess>
   </div>
 </template>
 
 <script>
 import Nav from "@/components/Nav.vue";
+import TheProcess from "@/components/TheProcess.vue";
 
 export default {
   name: "App",
   components: {
     Nav,
+    TheProcess,
   },
 };
 </script>
@@ -29,7 +32,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  text-align: center;
   // color: #2c3e50;
 }
 </style>

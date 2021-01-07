@@ -15,7 +15,7 @@ export default {
 a {
   text-decoration: none;
   color: #5a6fe0;
-  padding: 0.9rem 3rem;
+  padding: 0.9rem 1rem;
 }
 h2 {
   white-space: nowrap;
@@ -24,7 +24,6 @@ h2 {
   font-family: "Hind", serif;
   font-weight: 300;
   font-size: 1.5rem;
-  // padding: 1rem 0;
   margin-right: 3rem;
 }
 </style>

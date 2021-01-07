@@ -3,15 +3,20 @@
     <img class="img_me" src="../assets/me.png" alt="" />
     <navDescription class="imageDesc" msg="MARCIN MICHNA"></navDescription>
     <h1>FRONT-END DEVELOPER & DESIGNER</h1>
-    <navDescription
+    <!-- <h1>LET'S CREATE UNIQUE WEB & GRAPHIC EXPERIENCE</h1> -->
+    <!-- <navDescription
       class="headerDescription"
       msg="I'LL MAKE YOUR DREAM WEBSITE COME TRUE"
+    ></navDescription> -->
+    <navDescription
+      class="headerDescription"
+      msg="LET'S CREATE UNIQUE WEB & GRAPHIC EXPERIENCE"
     ></navDescription>
     <div class="buttonsWrapper">
       <regularButton msg="SEE MY LATEST WORK"></regularButton>
       <mainButton msg="CONTACT ME"></mainButton>
     </div>
-    <img src="../assets/Arrow.svg" alt="" />
+    <img class="arrow" src="../assets/Arrow.svg" alt="" />
   </nav>
 </template>
 
@@ -32,11 +37,10 @@ export default {
 
 <style scoped lang="scss">
 nav {
-  height: 100vh;
+  text-align: center;
   .img_me {
     background-image: url("../assets/Ellipse1.svg");
     background-repeat: no-repeat;
-    background-size: cover;
     background-size: 99%;
     background-position: center;
     padding: 0.55rem;
@@ -49,7 +53,6 @@ nav {
   h1 {
     align-content: center;
     font-family: "Source Serif Pro", serif;
-    font: bold;
     color: #353535;
     font-size: 4.6rem;
     margin-bottom: 0;
@@ -63,6 +66,9 @@ nav {
     margin: 12rem auto 15rem auto;
     justify-content: space-around;
     align-content: center;
+  }
+  .arrow {
+    margin-bottom: 2rem;
   }
 }
 </style>
