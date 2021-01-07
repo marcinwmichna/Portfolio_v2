@@ -3,6 +3,7 @@
     <img class="img_me" src="../assets/me.png" alt="" />
     <navDescription class="imageDesc" msg="MARCIN MICHNA"></navDescription>
     <h1>FRONT-END DEVELOPER & DESIGNER</h1>
+    <!-- <h1>LET'S CREATE UNIQUE WEB & GRAPHIC EXPERIENCE</h1> -->
     <!-- <navDescription
       class="headerDescription"
       msg="I'LL MAKE YOUR DREAM WEBSITE COME TRUE"
