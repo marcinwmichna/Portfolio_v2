@@ -3,18 +3,21 @@
     <!-- <Nav msg="Welcome to Your Vue.js App" /> -->
     <Nav></Nav>
     <TheProcess></TheProcess>
+    <RecentProjectsAndDesigns></RecentProjectsAndDesigns>
   </div>
 </template>
 
 <script>
 import Nav from "@/components/Nav.vue";
 import TheProcess from "@/components/TheProcess.vue";
+import RecentProjectsAndDesigns from "@/components/RecentProjectsAndDesigns.vue";
 
 export default {
   name: "App",
   components: {
     Nav,
     TheProcess,
+    RecentProjectsAndDesigns,
   },
 };
 </script>
