@@ -1,14 +1,18 @@
 <template>
   <div class="block">
-    <div class="description">
-      <SectionSubheader :msg="upHeader"></SectionSubheader>
-      <NavDescription msg="WEATHER APPLICATION"></NavDescription>
-      <SectionSubheader
-        msg="MY LATEST WORK. CLEAN AND SIMPLE. MADE WITH VUEJS USING OPEN WEATHER API. DESIGNED IN FIGMA."
-      ></SectionSubheader>
-      <RegularButton msg="VIEW WEBSITE"></RegularButton>
+    <div class="description_block">
+      <SectionSubheader class="projectName" :msg="upHeader"></SectionSubheader>
+      <NavDescription class="mainHeader" :msg="mainHeader"></NavDescription>
+      <SectionSubheader class="description" :msg="subHeader"></SectionSubheader>
+      <RegularButton class="viewButton" :msg="viewDesignButton"></RegularButton>
+      <RegularButton
+        class="viewButton"
+        :msg="viewWebsiteButton"
+      ></RegularButton>
     </div>
-    <div class="image"></div>
+    <picture class="image_block">
+      <img :src="require(`../assets/${urlToImage}`)" alt="" />
+    </picture>
   </div>
 </template>
 <script>
@@ -23,6 +27,7 @@ export default {
     subHeader: String,
     viewDesignButton: String,
     viewWebsiteButton: String,
+    urlToImage: URL,
   },
   components: {
     NavDescription,
@@ -32,4 +37,54 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.block {
+  margin: 7rem 0;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  .description_block {
+    margin: auto;
+    margin-right: 3rem;
+    .projectName {
+      color: #424242;
+    }
+    .mainHeader {
+      margin-top: 0;
+      font-weight: bold;
+    }
+    .description {
+      margin-bottom: 2rem;
+    }
+    .viewButton {
+      padding: 0;
+      margin: 0.5rem 0;
+    }
+  }
+  picture {
+    position: relative;
+  }
+  picture::before {
+    content: "";
+    position: absolute;
+    background-color: #f4f5f9;
+    width: 95%;
+    height: 93%;
+    z-index: -1;
+    left: -15px;
+    top: -15px;
+  }
+  @media screen and (max-width: 1900px) {
+    .image_block img {
+      width: 35vw;
+    }
+    picture::before {
+      height: 93%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    picture::before {
+      height: 22vw;
+    }
+  }
+}
 </style>

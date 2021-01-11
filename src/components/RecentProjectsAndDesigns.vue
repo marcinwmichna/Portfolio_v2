@@ -1,10 +1,24 @@
 <template>
   <section>
     <div class="contentWrapper">
-      <SectionHeader msg="RECENT PROJECTS AND DESIGNS"></SectionHeader>
+      <SectionHeader
+        class="title"
+        msg="RECENT PROJECTS AND DESIGNS"
+      ></SectionHeader>
       <div class="blockWrapper">
         <RecentProjectsAndDesignsBlock
-          upHeader="ds"
+          upHeader="THE WEATHERR"
+          mainHeader="WEATHER APPLICATION"
+          subHeader="MY LATEST WORK. CLEAN AND SIMPLE. MADE WITH VUEJS & VUEX USING OPEN WEATHER API. DESIGNED IN FIGMA."
+          viewDesignButton="VIEW WEBSITE"
+          urlToImage="theWeatherr.png"
+        ></RecentProjectsAndDesignsBlock>
+        <RecentProjectsAndDesignsBlock
+          mainHeader="RESUME"
+          subHeader="MY OWN RESUME. INCLUDES MY SKILLSET, CONTACT INFORMATION AND WORK EXPERIENCE. CLEAN AND SIMPLE. DESIGNED IN FIGMA."
+          viewDesignButton="VIEW DESIGN"
+          viewWebsiteButton="VIEW WEBSITE"
+          urlToImage="resume.png"
         ></RecentProjectsAndDesignsBlock>
       </div>
     </div>
@@ -27,7 +41,13 @@ export default {
   width: 55vw;
   max-width: 1100px;
   margin: auto;
-  .blockWrapper {
+  .title {
+    margin-top: 7rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  section .contentWrapper {
+    width: 70vw;
   }
 }
 </style>
