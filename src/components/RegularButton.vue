@@ -15,7 +15,6 @@ export default {
 a {
   text-decoration: none;
   color: #5a6fe0;
-  // padding: 0.9rem 1rem;
 }
 h2 {
   white-space: nowrap;

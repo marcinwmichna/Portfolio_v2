@@ -33,7 +33,6 @@ export default {
 <style lang="scss" scoped>
 section {
   background: #f9f9f9;
-  //   z-index: -1;
   .contentWrapper {
     position: relative;
     width: 55vw;
