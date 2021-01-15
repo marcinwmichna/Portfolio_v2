@@ -20,6 +20,27 @@
           viewWebsiteButton="VIEW WEBSITE"
           urlToImage="resume.png"
         ></RecentProjectsAndDesignsBlock>
+        <RecentProjectsAndDesignsBlock
+          mainHeader="RESUME"
+          subHeader="MY OWN RESUME. INCLUDES MY SKILLSET, CONTACT INFORMATION AND WORK EXPERIENCE. CLEAN AND SIMPLE. DESIGNED IN FIGMA."
+          viewDesignButton="VIEW DESIGN"
+          viewWebsiteButton="VIEW WEBSITE"
+          urlToImage="resume.png"
+        ></RecentProjectsAndDesignsBlock>
+        <RecentProjectsAndDesignsBlock
+          mainHeader="RESUME"
+          subHeader="MY OWN RESUME. INCLUDES MY SKILLSET, CONTACT INFORMATION AND WORK EXPERIENCE. CLEAN AND SIMPLE. DESIGNED IN FIGMA."
+          viewDesignButton="VIEW DESIGN"
+          viewWebsiteButton="VIEW WEBSITE"
+          urlToImage="resume.png"
+        ></RecentProjectsAndDesignsBlock>
+        <RecentProjectsAndDesignsBlock
+          mainHeader="RESUME"
+          subHeader="MY OWN RESUME. INCLUDES MY SKILLSET, CONTACT INFORMATION AND WORK EXPERIENCE. CLEAN AND SIMPLE. DESIGNED IN FIGMA."
+          viewDesignButton="VIEW DESIGN"
+          viewWebsiteButton="VIEW WEBSITE"
+          urlToImage="resume.png"
+        ></RecentProjectsAndDesignsBlock>
       </div>
     </div>
   </section>
