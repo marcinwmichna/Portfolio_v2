@@ -1,6 +1,7 @@
 <template>
   <h2>
-    <a href="#">{{ msg }}</a>
+    <a v-if="redirect[0] == '#'" :href="`${redirect}`">{{ msg }}</a>
+    <a v-else :href="`${redirect}`" target="_blank">{{ msg }}</a>
   </h2>
 </template>
 <script>
@@ -8,6 +9,7 @@ export default {
   name: "RegularButton",
   props: {
     msg: String,
+    redirect: String,
   },
 };
 </script>
@@ -15,7 +17,6 @@ export default {
 a {
   text-decoration: none;
   color: #5a6fe0;
-  padding: 0.9rem 1rem;
 }
 h2 {
   white-space: nowrap;

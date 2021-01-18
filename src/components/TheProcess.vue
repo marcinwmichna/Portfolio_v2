@@ -33,13 +33,12 @@ export default {
 <style lang="scss" scoped>
 section {
   background: #f9f9f9;
-  //   z-index: -1;
+  padding-bottom: 4rem;
   .contentWrapper {
     position: relative;
     width: 55vw;
     max-width: 1100px;
     margin: auto;
-
     .blockWrapper {
       margin-top: 3rem;
     }

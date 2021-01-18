@@ -1,35 +1,43 @@
 <template>
   <nav>
     <img class="img_me" src="../assets/me.png" alt="" />
-    <navDescription class="imageDesc" msg="MARCIN MICHNA"></navDescription>
+    <NavDescription class="imageDesc" msg="MARCIN MICHNA"></NavDescription>
     <h1>FRONT-END DEVELOPER & DESIGNER</h1>
     <!-- <h1>LET'S CREATE UNIQUE WEB & GRAPHIC EXPERIENCE</h1> -->
     <!-- <navDescription
       class="headerDescription"
       msg="I'LL MAKE YOUR DREAM WEBSITE COME TRUE"
     ></navDescription> -->
-    <navDescription
+    <NavDescription
       class="headerDescription"
       msg="LET'S CREATE UNIQUE WEB & GRAPHIC EXPERIENCE"
-    ></navDescription>
+    ></NavDescription>
     <div class="buttonsWrapper">
-      <regularButton msg="SEE MY LATEST WORK"></regularButton>
-      <mainButton msg="CONTACT ME"></mainButton>
+      <RegularButton
+        class="regularButton"
+        msg="SEE MY LATEST WORK"
+        redirect="#RecentProjectsAndDesigns"
+      ></RegularButton>
+      <MainButton
+        class="mainButton"
+        msg="CONTACT ME"
+        redirect="#TODO"
+      ></MainButton>
     </div>
     <img class="arrow" src="../assets/Arrow.svg" alt="" />
   </nav>
 </template>
 
 <script>
-import navDescription from "@/components/NavDescription.vue";
-import regularButton from "@/components/RegularButton.vue";
-import mainButton from "@/components/MainButton.vue";
+import NavDescription from "@/components/NavDescription.vue";
+import RegularButton from "@/components/RegularButton.vue";
+import MainButton from "@/components/MainButton.vue";
 
 export default {
   components: {
-    navDescription,
-    regularButton,
-    mainButton,
+    NavDescription,
+    RegularButton,
+    MainButton,
   },
   name: "Nav",
 };
@@ -66,6 +74,12 @@ nav {
     margin: 12rem auto 15rem auto;
     justify-content: space-around;
     align-content: center;
+    .regularButton {
+      padding: 0.9rem 1rem;
+    }
+    .mainButton {
+      padding: 0.9rem 0;
+    }
   }
   .arrow {
     margin-bottom: 2rem;

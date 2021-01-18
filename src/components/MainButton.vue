@@ -1,6 +1,6 @@
 <template>
   <h2>
-    <a href="#">{{ msg }}</a>
+    <a :href="`${redirect}`">{{ msg }}</a>
   </h2>
 </template>
 <script>
@@ -8,6 +8,7 @@ export default {
   name: "RegularButton",
   props: {
     msg: String,
+    redirect: String,
   },
 };
 </script>
