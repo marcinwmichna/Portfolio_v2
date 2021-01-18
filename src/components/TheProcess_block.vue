@@ -57,6 +57,7 @@
     <RegularButton
       class="contactButton"
       msg="MARCIN.W.MICHNA@GMAIL.COM"
+      redirect="#TODO"
     ></RegularButton>
   </div>
 </template>

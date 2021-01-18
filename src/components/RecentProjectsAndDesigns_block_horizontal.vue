@@ -4,11 +4,17 @@
       <SectionSubheader class="projectName" :msg="upHeader"></SectionSubheader>
       <NavDescription class="mainHeader" :msg="mainHeader"></NavDescription>
       <SectionSubheader class="description" :msg="subHeader"></SectionSubheader>
-      <RegularButton class="viewButton" :msg="viewDesignButton"></RegularButton>
+      <RegularButton
+        class="viewButton"
+        :msg="viewDesignButton"
+        :redirect="urlToDesign"
+      ></RegularButton>
       <RegularButton
         class="viewButton"
         :msg="viewWebsiteButton"
+        :redirect="urlToWebsite"
       ></RegularButton>
+      <!-- <h2>{{ redirect }}</h2> -->
     </div>
     <picture class="image_block">
       <img :src="require(`../assets/${urlToImage}`)" alt="" />
@@ -28,6 +34,8 @@ export default {
     viewDesignButton: String,
     viewWebsiteButton: String,
     urlToImage: URL,
+    urlToWebsite: String,
+    urlToDesign: String,
   },
   components: {
     NavDescription,

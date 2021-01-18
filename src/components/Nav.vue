@@ -16,8 +16,13 @@
       <RegularButton
         class="regularButton"
         msg="SEE MY LATEST WORK"
+        redirect="#RecentProjectsAndDesigns"
       ></RegularButton>
-      <MainButton class="mainButton" msg="CONTACT ME"></MainButton>
+      <MainButton
+        class="mainButton"
+        msg="CONTACT ME"
+        redirect="#TODO"
+      ></MainButton>
     </div>
     <img class="arrow" src="../assets/Arrow.svg" alt="" />
   </nav>
