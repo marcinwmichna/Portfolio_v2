@@ -19,8 +19,8 @@
         viewDesignButton="VIEW DESIGN"
         viewWebsiteButton="VIEW WEBSITE"
         urlToImage="resume.png"
-        urlToWebsite="https://www.figma.com/file/kYcT0dBhA1dbPcqozeeUpn/Resume?node-id=0%3A1"
-        urlToDesign="https://marcinwmichna.github.io/Resume/"
+        urlToDesign="https://www.figma.com/file/kYcT0dBhA1dbPcqozeeUpn/Resume?node-id=0%3A1"
+        urlToWebsite="https://marcinwmichna.github.io/Resume/"
       ></RecentProjectsAndDesignsBlockHorizontal>
       <div class="verticalBlocksWrapper">
         <RecentProjectsAndDesignsBlockVertical
@@ -70,7 +70,7 @@ export default {
   width: 55vw;
   max-width: 1100px;
   margin: auto;
-  margin-bottom: 20rem;
+  margin-bottom: 9rem;
   margin-top: 7rem;
 
   .blockWrapper {

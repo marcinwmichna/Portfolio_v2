@@ -4,6 +4,7 @@
     <Nav></Nav>
     <TheProcess></TheProcess>
     <RecentProjectsAndDesigns></RecentProjectsAndDesigns>
+    <AboutMe></AboutMe>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Nav from "@/components/Nav.vue";
 import TheProcess from "@/components/TheProcess.vue";
 import RecentProjectsAndDesigns from "@/components/RecentProjectsAndDesigns.vue";
+import AboutMe from "@/components/AboutMe.vue";
 
 export default {
   name: "App",
@@ -18,6 +20,7 @@ export default {
     Nav,
     TheProcess,
     RecentProjectsAndDesigns,
+    AboutMe,
   },
 };
 </script>
