@@ -13,7 +13,10 @@
         ></NavDescription>
         <div class="subTitle block">
           <SectionSubheader msg="RZESZÓW"></SectionSubheader>
-          <SectionSubheader msg="7.2019-9.2019"></SectionSubheader>
+          <SectionSubheader
+            class="subTitle_date"
+            msg="7.2019-9.2019"
+          ></SectionSubheader>
         </div>
 
         <SectionSubheader
@@ -53,7 +56,10 @@
             <SectionSubheader
               msg="KRAKÓW UNIVERSITY OF TECHNOLOGY"
             ></SectionSubheader>
-            <SectionSubheader msg="2020 - NOW"></SectionSubheader>
+            <SectionSubheader
+              class="subTitle_date"
+              msg="2020 - NOW"
+            ></SectionSubheader>
           </div>
         </div>
         <div class="achievementBlock">
@@ -68,14 +74,20 @@
             <SectionSubheader
               msg="RZESZÓW UNIVERSITY OF TECHNOLOGY"
             ></SectionSubheader>
-            <SectionSubheader msg="2016 - 2020"></SectionSubheader>
+            <SectionSubheader
+              class="subTitle_date"
+              msg="2016 - 2020"
+            ></SectionSubheader>
           </div>
         </div>
         <div class="achievementBlock">
           <NavDescription class="title" msg="CISCO CCNA "></NavDescription>
           <div class="subTitle">
             <SectionSubheader msg="ROUTING & SWITCHING"></SectionSubheader>
-            <SectionSubheader msg="2019"></SectionSubheader>
+            <SectionSubheader
+              class="subTitle_date"
+              msg="2019"
+            ></SectionSubheader>
           </div>
         </div>
         <div class="achievementBlock">
@@ -84,7 +96,10 @@
             msg="EUROPEAN COMPUTER DRIVING LICENCE"
           ></NavDescription>
           <div class="subTitle">
-            <SectionSubheader msg="2011"></SectionSubheader>
+            <SectionSubheader
+              class="subTitle_date"
+              msg="2011"
+            ></SectionSubheader>
           </div>
         </div>
       </div>
@@ -114,6 +129,9 @@ export default {
 
 section {
   background: #f9f9f9;
+  .subTitle_date {
+    opacity: 0.7;
+  }
   .wrapper {
     display: flex;
     justify-content: space-between;
