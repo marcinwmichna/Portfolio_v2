@@ -5,6 +5,8 @@
     <TheProcess></TheProcess>
     <RecentProjectsAndDesigns></RecentProjectsAndDesigns>
     <AboutMe></AboutMe>
+    <WhatDoIOffer></WhatDoIOffer>
+    <ContactMe></ContactMe>
   </div>
 </template>
 
@@ -13,6 +15,8 @@ import Nav from "@/components/Nav.vue";
 import TheProcess from "@/components/TheProcess.vue";
 import RecentProjectsAndDesigns from "@/components/RecentProjectsAndDesigns.vue";
 import AboutMe from "@/components/AboutMe.vue";
+import WhatDoIOffer from "@/components/WhatDoIOffer.vue";
+import ContactMe from "@/components/ContactMe.vue";
 
 export default {
   name: "App",
@@ -21,6 +25,8 @@ export default {
     TheProcess,
     RecentProjectsAndDesigns,
     AboutMe,
+    WhatDoIOffer,
+    ContactMe,
   },
 };
 </script>

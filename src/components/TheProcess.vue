@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="HowIWork">
     <div class="contentWrapper">
       <SectionUpheader msg="HOW I WORK"></SectionUpheader>
       <SectionHeader msg="THE PROCESS"></SectionHeader>

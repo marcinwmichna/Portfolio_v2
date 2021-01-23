@@ -1,5 +1,5 @@
 <template>
-  <div class="block">
+  <section class="block">
     <div class="description_block">
       <SectionSubheader class="projectName" :msg="upHeader"></SectionSubheader>
       <NavDescription class="mainHeader" :msg="mainHeader"></NavDescription>
@@ -19,7 +19,7 @@
     <picture class="image_block">
       <img :src="require(`../assets/${urlToImage}`)" alt="" />
     </picture>
-  </div>
+  </section>
 </template>
 <script>
 import NavDescription from "@/components/NavDescription.vue";
