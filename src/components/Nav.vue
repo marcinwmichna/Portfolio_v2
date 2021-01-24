@@ -21,7 +21,7 @@
       <MainButton
         class="mainButton"
         msg="CONTACT ME"
-        redirect="#TODO"
+        redirect="#ContactMe"
       ></MainButton>
     </div>
     <img class="arrow" src="../assets/Arrow.svg" alt="" />
@@ -76,6 +76,7 @@ nav {
     align-content: center;
     .regularButton {
       padding: 0.9rem 1rem;
+      margin-right: 3rem;
     }
     .mainButton {
       padding: 0.9rem 0;

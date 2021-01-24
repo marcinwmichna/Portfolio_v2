@@ -1,5 +1,5 @@
 <template>
-  <section class="block">
+  <section id="RecentProjects" class="block">
     <div class="description_block">
       <SectionSubheader class="projectName" :msg="upHeader"></SectionSubheader>
       <NavDescription class="mainHeader" :msg="mainHeader"></NavDescription>

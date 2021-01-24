@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="AboutMe">
     <SectionUpheader
       class="wrapper"
       msg="ABOUT ME & MY EDUCATION"
@@ -135,7 +135,7 @@ section {
   .wrapper {
     display: flex;
     justify-content: space-between;
-    width: 55vw;
+    width: 70vw;
     max-width: 1100px;
     margin: auto;
 

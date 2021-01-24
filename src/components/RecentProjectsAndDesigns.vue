@@ -67,7 +67,7 @@ export default {
 <style lang="scss">
 .contentWrapper {
   position: relative;
-  width: 55vw;
+  width: 70vw;
   max-width: 1100px;
   margin: auto;
   margin-bottom: 9rem;
