@@ -33,7 +33,7 @@ export default {
     subHeader: String,
     viewDesignButton: String,
     viewWebsiteButton: String,
-    urlToImage: URL,
+    urlToImage: String,
     urlToWebsite: String,
     urlToDesign: String,
   },
@@ -52,13 +52,13 @@ export default {
   justify-content: space-between;
   .description_block {
     margin: auto;
-    margin-right: 3rem;
+    margin-right: 5rem;
     .projectName {
       color: #424242;
     }
     .mainHeader {
       margin-top: 0;
-      font-weight: bold;
+      // font-weight: bold;
     }
     .description {
       margin-bottom: 2rem;
@@ -74,24 +74,24 @@ export default {
   picture::before {
     content: "";
     position: absolute;
-    background-color: #f4f5f9;
-    width: 95%;
-    height: 93%;
+    background-color: #f8f8f8;
+    width: 103%;
+    height: 100%;
     z-index: -1;
-    left: -15px;
-    top: -15px;
+    left: -5px;
+    top: -4px;
   }
   @media screen and (max-width: 1900px) {
     .image_block img {
-      width: 35vw;
+      // width: 35vw;
     }
     picture::before {
-      height: 93%;
+      // height: 93%;
     }
   }
   @media screen and (max-width: 1000px) {
     picture::before {
-      height: 22vw;
+      // height: 22vw;
     }
   }
 }

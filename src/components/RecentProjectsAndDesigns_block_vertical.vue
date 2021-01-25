@@ -45,7 +45,7 @@ export default {
     subHeader: String,
     viewDesignButton: String,
     viewWebsiteButton: String,
-    urlToImage: URL,
+    urlToImage: String,
     urlToWebsite: String,
     urlToDesign: String,
   },
@@ -77,7 +77,7 @@ export default {
     }
     .mainHeader {
       margin-top: 0;
-      font-weight: bold;
+      // font-weight: bold;
     }
     .description {
       margin-bottom: 1rem;

@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&display=swap");
 
 body {
   margin: 0 !important;
@@ -45,5 +45,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   // color: #2c3e50;
+  ::selection {
+    color: white;
+    background: #424242;
+  }
 }
 </style>

@@ -12,6 +12,7 @@
         viewWebsiteButton="VIEW WEBSITE"
         urlToImage="theWeatherr.png"
         urlToWebsite="https://theweatherrdeploy.herokuapp.com/"
+        urlToDesign=""
       ></RecentProjectsAndDesignsBlockHorizontal>
       <RecentProjectsAndDesignsBlockHorizontal
         mainHeader="RESUME"
@@ -30,6 +31,7 @@
           viewWebsiteButton="VIEW WEBSITE"
           urlToImage="portfolioWebsite.png"
           urlToWebsite="https://marcinwmichna.github.io/portfolio/"
+          urlToDesign=""
         ></RecentProjectsAndDesignsBlockVertical>
         <RecentProjectsAndDesignsBlockVertical
           upHeader="TO BUY"
@@ -38,6 +40,7 @@
           viewWebsiteButton="VIEW WEBSITE"
           urlToImage="shoppingApplication.png"
           urlToWebsite="https://marcinwmichna.github.io/shopping-list/"
+          urlToDesign=""
         ></RecentProjectsAndDesignsBlockVertical>
         <RecentProjectsAndDesignsBlockVertical
           upHeader="BET IT OUT"
@@ -46,6 +49,7 @@
           viewDesignButton="VIEW DESIGN"
           urlToImage="betItOut.png"
           urlToDesign="https://www.figma.com/file/BAqTNG4wFRGQHgyqmLT9eP/Bet-it-out?node-id=0%3A1"
+          urlToWebsite=""
         ></RecentProjectsAndDesignsBlockVertical>
       </div>
     </div>

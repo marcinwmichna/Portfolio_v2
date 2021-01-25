@@ -55,8 +55,10 @@ nav {
     margin-top: 9em;
     width: 7.7em;
   }
+
   .imageDesc {
     margin-top: 0.3rem;
+    font-weight: 300;
   }
   h1 {
     align-content: center;
@@ -67,6 +69,7 @@ nav {
   }
   .headerDescription {
     margin-top: 0;
+    font-weight: 300;
   }
   .buttonsWrapper {
     width: fit-content;

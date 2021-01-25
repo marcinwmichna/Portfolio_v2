@@ -5,21 +5,34 @@
         <SectionUpheader msg="INTRESTED?"></SectionUpheader>
         <SectionHeader class="header" msg="LET'S WORK TOGETHER"></SectionHeader>
         <SectionSubheader
-          msg="I’M CURRENTLY AVAILABLE AND LOOKING FOR INTRESTING AND DEMANDING JOB. I’D LOVE TO TALK TO YOU!  "
+          msg="I’M AVAILABLE AND LOOKING FOR INTRESTING AND DEMANDING JOB. I’D LOVE TO TALK TO YOU!  "
         ></SectionSubheader>
         <div class="inputBlock">
           <SectionSubheader msg="YOUR E-MAIL"></SectionSubheader>
-          <form action="#" method="GET">
+          <!-- <form action="#" method="GET">
             <input
               type="text"
               required="true"
+              id="email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
-          </form>
-          <RegularButton
+          </form> -->
+          <FormulateForm @submit="submitHandler">
+            <div class="formWrap">
+              <FormulateInput
+                type="email"
+                name="email"
+                placeholder="Email address"
+                validation="required|email"
+                input-class="input"
+              />
+              <FormulateInput type="submit" label="CONTACT ME"></FormulateInput>
+            </div>
+          </FormulateForm>
+          <!-- <RegularButton
             redirect="#TODO"
             msg="MARCIN.W.MICHNA@GMAIL.COM"
-          ></RegularButton>
+          ></RegularButton> -->
         </div>
       </div>
       <div class="menuBlock">
@@ -69,6 +82,7 @@ import SectionHeader from "@/components/SectionHeader.vue";
 import SectionUpheader from "@/components/SectionUpheader.vue";
 import RegularButton from "@/components/RegularButton.vue";
 import SectionSubheader from "@/components/SectionSubheader.vue";
+// import VueFormulate from "@braid/vue-formulate";
 
 export default {
   components: {
@@ -86,6 +100,12 @@ export default {
   justify-content: space-between;
   .contactBlock {
     margin-right: 5rem;
+    .formWrap {
+      display: flex;
+      .input {
+        padding: 1rem;
+      }
+    }
   }
   .menuBlock {
     justify-content: space-between;

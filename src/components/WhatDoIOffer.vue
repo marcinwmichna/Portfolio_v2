@@ -3,31 +3,31 @@
     <div class="contentWrapper">
       <SectionHeader msg="WHAT DO I OFFER?"></SectionHeader>
       <SectionUpheader class="upheader" msg="MY KEY ASPECTS"></SectionUpheader>
-      <NavDescription
+      <SectionSubheader
         class="description"
-        msg="It is all about the details in every aspect: design, development and good communication.
-I am focused on precise and meaningfull designes. Currently exploring, searching, designing and building all code and non-code related including such as: JavaScript, nodeJS and more."
-      ></NavDescription>
+        msg="IT IS ALL ABOUT THE DETAILS IN EVERY ASPECT: DESIGN, DEVELOPMENT AND GOOD COMMUNICATION.
+I AM FOCUSED ON PRECISE AND MEANINGFULL DESIGNES. CURRENTLY EXPLORING AND BUILDING ALL CODE AND NON-CODE RELATED INCLUDING SUCH AS: JAVASCRIPT, NODEJS AND MORE."
+      ></SectionSubheader>
       <SectionUpheader class="upheader" msg="WHAT AM I LIKE?"></SectionUpheader>
-      <NavDescription
+      <SectionSubheader
         class="description"
-        msg="Self-motivated and cheerful person with passion and strong education background. Seeking to improve key development & designing abilities."
-      ></NavDescription>
+        msg="SELF-MOTIVATED AND CHEERFUL PERSON WITH PASSION AND STRONG EDUCATION BACKGROUND. SEEKING TO IMPROVE KEY DEVELOPMENT & DESIGNING ABILITIES."
+      ></SectionSubheader>
     </div>
   </section>
 </template>
 <script>
 import SectionHeader from "@/components/SectionHeader.vue";
-// import SectionSubheader from "@/components/SectionSubheader.vue";
+import SectionSubheader from "@/components/SectionSubheader.vue";
 import SectionUpheader from "@/components/SectionUpheader.vue";
-import NavDescription from "@/components/NavDescription.vue";
+// import NavDescription from "@/components/NavDescription.vue";
 
 export default {
   components: {
     SectionHeader,
-    // SectionSubheader,
+    SectionSubheader,
     SectionUpheader,
-    NavDescription,
+    // NavDescription,
   },
 };
 </script>
@@ -37,5 +37,6 @@ export default {
 }
 .description {
   margin-top: 0;
+  font-weight: 300;
 }
 </style>
