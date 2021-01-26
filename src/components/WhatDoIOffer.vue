@@ -5,8 +5,11 @@
       <SectionUpheader class="upheader" msg="MY KEY ASPECTS"></SectionUpheader>
       <SectionSubheader
         class="description"
-        msg="IT IS ALL ABOUT THE DETAILS IN EVERY ASPECT: DESIGN, DEVELOPMENT AND GOOD COMMUNICATION.
-I AM FOCUSED ON PRECISE AND MEANINGFULL DESIGNES. CURRENTLY EXPLORING AND BUILDING ALL CODE AND NON-CODE RELATED INCLUDING SUCH AS: JAVASCRIPT, NODEJS AND MORE."
+        msg="IT IS ALL ABOUT THE DETAILS IN EVERY ASPECT: DESIGN, DEVELOPMENT AND GOOD COMMUNICATION."
+      ></SectionSubheader>
+      <SectionSubheader
+        class="description"
+        msg="I AM FOCUSED ON PRECISE AND MEANINGFULL DESIGNES. CURRENTLY EXPLORING AND BUILDING ALL CODE AND NON-CODE RELATED INCLUDING SUCH AS: JAVASCRIPT, NODEJS AND MORE."
       ></SectionSubheader>
       <SectionUpheader class="upheader" msg="WHAT AM I LIKE?"></SectionUpheader>
       <SectionSubheader

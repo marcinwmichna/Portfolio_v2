@@ -81,18 +81,5 @@ export default {
     left: -5px;
     top: -4px;
   }
-  @media screen and (max-width: 1900px) {
-    .image_block img {
-      // width: 35vw;
-    }
-    picture::before {
-      // height: 93%;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    picture::before {
-      // height: 22vw;
-    }
-  }
 }
 </style>

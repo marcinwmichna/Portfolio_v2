@@ -14,9 +14,6 @@ export default {
 };
 </script>
 <style  lang="scss" scoped>
-a:hover {
-  // color: black;
-}
 .button {
   white-space: nowrap;
   margin: 0;

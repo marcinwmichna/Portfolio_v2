@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
 
 body {
   margin: 0 !important;

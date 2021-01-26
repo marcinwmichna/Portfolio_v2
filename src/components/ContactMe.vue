@@ -17,18 +17,17 @@
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
             />
           </form> -->
-          <FormulateForm @submit="submitHandler">
-            <div class="formWrap">
-              <FormulateInput
-                type="email"
-                name="email"
-                placeholder="Email address"
-                validation="required|email"
-                input-class="input"
-              />
-              <FormulateInput type="submit" label="CONTACT ME"></FormulateInput>
-            </div>
+          <FormulateForm>
+            <FormulateInput
+              type="email"
+              name="email"
+              label="ENTER YOUR EMAIL ADDRESS"
+              validation="required|email"
+              class="inputs"
+            />
+            <FormulateInput type="submit" label="CONTACT ME"></FormulateInput>
           </FormulateForm>
+
           <!-- <RegularButton
             redirect="#TODO"
             msg="MARCIN.W.MICHNA@GMAIL.COM"
@@ -100,9 +99,9 @@ export default {
   justify-content: space-between;
   .contactBlock {
     margin-right: 5rem;
-    .formWrap {
+    .formulate-form {
       display: flex;
-      .input {
+      input {
         padding: 1rem;
       }
     }
