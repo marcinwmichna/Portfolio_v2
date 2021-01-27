@@ -5,10 +5,12 @@
         <SectionUpheader msg="INTRESTED?"></SectionUpheader>
         <SectionHeader class="header" msg="LET'S WORK TOGETHER"></SectionHeader>
         <SectionSubheader
+          class="subheader"
           msg="I’M AVAILABLE AND LOOKING FOR INTRESTING AND DEMANDING JOB. I’D LOVE TO TALK TO YOU!  "
         ></SectionSubheader>
+        <SectionSubheader msg="YOUR EMAIL ADDRESS"></SectionSubheader>
         <div class="inputBlock">
-          <SectionSubheader msg="YOUR E-MAIL"></SectionSubheader>
+          <!-- <SectionSubheader msg="YOUR E-MAIL"></SectionSubheader> -->
           <!-- <form action="#" method="GET">
             <input
               type="text"
@@ -21,7 +23,6 @@
             <FormulateInput
               type="email"
               name="email"
-              label="ENTER YOUR EMAIL ADDRESS"
               validation="required|email"
               class="inputs"
             />
@@ -63,12 +64,12 @@
         <div class="socialBlock">
           <RegularButton
             class="footerButton"
-            redirect="linkedin.com/in/marcinwmichna"
+            redirect="https://www.linkedin.com/in/marcinwmichna"
             msg="LINKEDIN"
           ></RegularButton>
           <RegularButton
             class="footerButton"
-            redirect="github.com/marcinwmichna"
+            redirect="https://www.github.com/marcinwmichna"
             msg="GITHUB"
           ></RegularButton>
         </div>
@@ -94,15 +95,74 @@ export default {
 </script>
 <style lang="scss" scoped>
 .contentWrapper {
-  margin-bottom: 0;
+  margin-bottom: 0rem;
+  padding-bottom: 4rem;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  width: 70vw;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 7rem;
+
   .contactBlock {
-    margin-right: 5rem;
+    margin-right: 10%;
+    width: 100%;
+    .subheader {
+      margin-bottom: 4rem;
+    }
     .formulate-form {
       display: flex;
-      input {
-        padding: 1rem;
+      font-family: "Hind", serif;
+      font-weight: 300;
+      font-size: 1rem;
+      margin-bottom: 4rem;
+
+      ::v-deep button {
+        margin-left: 1rem;
+        padding: 1.2rem 3rem;
+        white-space: nowrap;
+        font-family: "Hind", serif;
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: #5a6fe0;
+        box-sizing: border-box;
+        border: 1px solid #5a6fe0;
+        background-color: #5a6fe0;
+        // border-style: inset;
+      }
+      ::v-deep button::hover {
+        opacity: 0.6;
+      }
+      ::v-deep .formulate-input-element--submit--label {
+        color: white;
+      }
+
+      ::v-deep .inputs {
+        width: 120%;
+        // margin: 1px solid blue;
+      }
+      ::v-deep input {
+        font-family: "Hind", serif;
+        box-sizing: border-box;
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        border: 1px solid #e6e6e6;
+        padding: 1.2rem;
+        width: 100%;
+        color: #353535;
+      }
+      ::v-deep input:focus {
+        outline: #b4b4b4 !important;
+        border: 1px solid #b4b4b4;
+      }
+      ::v-deep .formulate-input-errors {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0.5rem;
+        color: #d83c3c;
+        text-transform: uppercase;
       }
     }
   }
@@ -110,6 +170,10 @@ export default {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+
+    .linksBlock {
+      margin-bottom: 3rem;
+    }
     .button ::v-deep a {
       color: #424242;
     }

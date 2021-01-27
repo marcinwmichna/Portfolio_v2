@@ -42,4 +42,12 @@ export default {
   margin-top: 0;
   font-weight: 300;
 }
+.contentWrapper {
+  position: relative;
+  width: 70vw;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 9rem;
+  margin-top: 7rem;
+}
 </style>

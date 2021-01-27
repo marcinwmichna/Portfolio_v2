@@ -35,4 +35,9 @@ h2::before {
   left: -15px;
   top: 27px;
 }
+@media screen and (max-width: 550px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+}
 </style>

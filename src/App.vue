@@ -46,8 +46,22 @@ body {
   box-sizing: border-box;
   // color: #2c3e50;
   ::selection {
-    color: white;
-    background: #424242;
+    color: rgba(255, 255, 255, 0.979);
+    background: #494949;
+  }
+}
+::v-deep section .contentWrapper {
+  width: 70vw;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 9rem;
+  margin-top: 7rem;
+  display: flex;
+}
+
+@media screen and(max-width:1000px) {
+  html {
+    font-size: 16px;
   }
 }
 </style>

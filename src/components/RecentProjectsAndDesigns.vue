@@ -68,7 +68,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .contentWrapper {
   position: relative;
   width: 70vw;
@@ -88,6 +88,17 @@ export default {
 @media screen and (max-width: 1400px) {
   section .contentWrapper {
     width: 70vw;
+  }
+  .blockWrapper {
+    .verticalBlocksWrapper {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .verticalBlocksWrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
 </style>

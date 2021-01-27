@@ -1,7 +1,7 @@
 <template>
   <section id="AboutMe">
     <SectionUpheader
-      class="wrapper"
+      class="contentWrapper wrapper"
       msg="ABOUT ME & MY EDUCATION"
     ></SectionUpheader>
     <div class="aboutMeWrapper wrapper">

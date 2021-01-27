@@ -54,23 +54,23 @@
         ></SectionSubheader>
       </div>
     </div>
-    <RegularButton
+    <!-- <RegularButton
       class="contactButton"
       msg="MARCIN.W.MICHNA@GMAIL.COM"
       redirect="#TODO"
-    ></RegularButton>
+    ></RegularButton> -->
   </div>
 </template>
 <script>
 import NavDescription from "@/components/NavDescription.vue";
 import SectionSubheader from "@/components/SectionSubheader.vue";
-import RegularButton from "@/components/RegularButton.vue";
+// import RegularButton from "@/components/RegularButton.vue";
 
 export default {
   components: {
     NavDescription,
     SectionSubheader,
-    RegularButton,
+    // RegularButton,
   },
 };
 </script>
@@ -101,7 +101,7 @@ export default {
     }
 
     .section_text_wrapper {
-      width: 23vw;
+      width: 27vw;
       max-width: 400px;
       min-width: 220px;
       // width: 100%;

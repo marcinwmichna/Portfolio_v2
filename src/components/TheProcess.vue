@@ -44,9 +44,9 @@ section {
     }
   }
 }
-@media screen and (max-width: 1400px) {
-  section .contentWrapper {
-    width: 70vw;
+@media screen and (max-width: 550px) {
+  section .blockWrapper {
+    width: 80vw;
   }
 }
 </style>

@@ -90,7 +90,17 @@ export default {
     }
   }
   picture {
+    margin: auto;
     img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .verticalBlocksWrapper .block {
+    width: 100%;
+    .image_block {
       width: 100%;
     }
   }
