@@ -99,9 +99,12 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .verticalBlocksWrapper .block {
+    margin-top: 4rem;
     width: 100%;
     .image_block {
-      width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 }

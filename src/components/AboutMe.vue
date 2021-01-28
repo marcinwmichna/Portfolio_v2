@@ -166,4 +166,22 @@ section {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .aboutMeWrapper {
+    display: flex;
+    flex-direction: column;
+    .education h2:first-child {
+      margin-top: 2rem;
+    }
+    .workExperience .block {
+      max-width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .contentWrapper,
+  .aboutMeWrapper {
+    width: 90vw !important;
+  }
+}
 </style>

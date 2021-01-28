@@ -75,11 +75,28 @@ export default {
     content: "";
     position: absolute;
     background-color: #f8f8f8;
-    width: 103%;
+    width: 100%;
     height: 100%;
     z-index: -1;
-    left: -5px;
+    // left: -5px;
     top: -4px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block {
+    // display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    margin: 4rem 0;
+    .description_block {
+      margin: 2rem 0 0 0;
+    }
+    .image_block {
+      img {
+        width: 100%;
+        margin: auto;
+      }
+    }
   }
 }
 </style>

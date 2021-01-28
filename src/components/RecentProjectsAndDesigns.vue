@@ -101,4 +101,9 @@ export default {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 550px) {
+  .contentWrapper {
+    width: 90vw !important;
+  }
+}
 </style>

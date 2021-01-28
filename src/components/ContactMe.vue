@@ -39,26 +39,28 @@
         <div class="linksBlock">
           <SectionUpheader msg="QUICK LINKS"></SectionUpheader>
           <SectionHeader class="header" msg="MENU"></SectionHeader>
-          <RegularButton
-            class="footerButton"
-            redirect="#HowIWork"
-            msg="HOW I WORK"
-          ></RegularButton>
-          <RegularButton
-            class="footerButton"
-            redirect="#RecentProjectsAndDesigns"
-            msg="RECENT PROJECTS"
-          ></RegularButton>
-          <RegularButton
-            class="footerButton"
-            redirect="#AboutMe"
-            msg="WORK EXPERIENCE"
-          ></RegularButton>
-          <RegularButton
-            class="footerButton"
-            redirect="#AboutMe"
-            msg="EDUCATION"
-          ></RegularButton>
+          <div class="links">
+            <RegularButton
+              class="footerButton"
+              redirect="#HowIWork"
+              msg="HOW I WORK"
+            ></RegularButton>
+            <RegularButton
+              class="footerButton"
+              redirect="#RecentProjectsAndDesigns"
+              msg="RECENT PROJECTS"
+            ></RegularButton>
+            <RegularButton
+              class="footerButton"
+              redirect="#AboutMe"
+              msg="WORK EXPERIENCE"
+            ></RegularButton>
+            <RegularButton
+              class="footerButton"
+              redirect="#AboutMe"
+              msg="EDUCATION"
+            ></RegularButton>
+          </div>
           <!-- <RegularButton redirect="#HowIWork" msg="MY SKILLS"></RegularButton> -->
         </div>
         <div class="socialBlock">
@@ -124,7 +126,7 @@ export default {
         white-space: nowrap;
         font-family: "Hind", serif;
         font-weight: 300;
-        font-size: 1.3rem;
+        font-size: 1rem;
         color: #5a6fe0;
         box-sizing: border-box;
         border: 1px solid #5a6fe0;
@@ -138,14 +140,10 @@ export default {
         color: white;
       }
 
-      ::v-deep .inputs {
-        width: 120%;
-        // margin: 1px solid blue;
-      }
       ::v-deep input {
         font-family: "Hind", serif;
         box-sizing: border-box;
-        font-size: 1.3rem;
+        font-size: 1rem;
         font-weight: 300;
         text-transform: uppercase;
         border: 1px solid #e6e6e6;
@@ -195,5 +193,39 @@ export default {
 .header::before {
   width: 0 !important;
   height: 0 !important;
+}
+@media screen and (max-width: 1000px) {
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    .contactBlock {
+      margin: 0;
+      .formulate-form {
+        ::v-deep .inputs {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .menuBlock {
+    .linksBlock {
+      h3:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .contentWrapper {
+    width: 90vw !important;
+    ::v-deep button {
+      margin: 1rem 0 0 0 !important;
+      width: 100% !important;
+    }
+  }
+  .formulate-form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

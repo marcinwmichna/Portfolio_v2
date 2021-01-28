@@ -50,4 +50,9 @@ export default {
   margin-bottom: 9rem;
   margin-top: 7rem;
 }
+@media screen and (max-width: 550px) {
+  .contentWrapper {
+    width: 90vw !important;
+  }
+}
 </style>

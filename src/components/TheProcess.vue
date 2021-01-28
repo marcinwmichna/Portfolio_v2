@@ -46,7 +46,10 @@ section {
 }
 @media screen and (max-width: 550px) {
   section .blockWrapper {
-    width: 80vw;
+    width: 90vw;
+  }
+  .contentWrapper {
+    width: 90vw !important;
   }
 }
 </style>
