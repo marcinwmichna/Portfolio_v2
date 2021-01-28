@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <section>
     <img class="img_me" src="../assets/me.png" alt="" />
     <NavDescription class="imageDesc" msg="MARCIN MICHNA"></NavDescription>
     <h1>FRONT-END DEVELOPER & DESIGNER</h1>
@@ -21,11 +21,11 @@
       <MainButton
         class="mainButton"
         msg="CONTACT ME"
-        redirect="#TODO"
+        redirect="#ContactMe"
       ></MainButton>
     </div>
     <img class="arrow" src="../assets/Arrow.svg" alt="" />
-  </nav>
+  </section>
 </template>
 
 <script>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-nav {
+section {
   text-align: center;
   .img_me {
     background-image: url("../assets/Ellipse1.svg");
@@ -55,8 +55,10 @@ nav {
     margin-top: 9em;
     width: 7.7em;
   }
+
   .imageDesc {
     margin-top: 0.3rem;
+    font-weight: 300;
   }
   h1 {
     align-content: center;
@@ -67,6 +69,7 @@ nav {
   }
   .headerDescription {
     margin-top: 0;
+    font-weight: 300;
   }
   .buttonsWrapper {
     width: fit-content;
@@ -76,6 +79,7 @@ nav {
     align-content: center;
     .regularButton {
       padding: 0.9rem 1rem;
+      margin-right: 3rem;
     }
     .mainButton {
       padding: 0.9rem 0;
@@ -83,6 +87,42 @@ nav {
   }
   .arrow {
     margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section h1,
+  section .imageDesc,
+  section .headerDescription {
+    padding: 0 2rem;
+  }
+
+  .buttonsWrapper {
+    .regularButton {
+      margin-right: 1rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .img_me {
+    margin-top: 1rem !important;
+  }
+  section h1 {
+    font-size: 3rem;
+  }
+  section h2,
+  section h2 ::v-deep a {
+    font-size: 1rem;
+  }
+  section {
+    .buttonsWrapper {
+      margin: 5rem auto;
+      display: flex;
+      flex-direction: column;
+      .regularButton {
+        margin: 0 0 1rem 0 !important;
+      }
+    }
   }
 }
 </style>

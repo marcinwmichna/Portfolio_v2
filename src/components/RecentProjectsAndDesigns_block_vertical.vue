@@ -45,7 +45,7 @@ export default {
     subHeader: String,
     viewDesignButton: String,
     viewWebsiteButton: String,
-    urlToImage: URL,
+    urlToImage: String,
     urlToWebsite: String,
     urlToDesign: String,
   },
@@ -77,7 +77,7 @@ export default {
     }
     .mainHeader {
       margin-top: 0;
-      font-weight: bold;
+      // font-weight: bold;
     }
     .description {
       margin-bottom: 1rem;
@@ -90,8 +90,21 @@ export default {
     }
   }
   picture {
+    margin: auto;
     img {
-      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .verticalBlocksWrapper .block {
+    margin-top: 4rem;
+    width: 100%;
+    .image_block {
+      img {
+        width: 100%;
+      }
     }
   }
 }

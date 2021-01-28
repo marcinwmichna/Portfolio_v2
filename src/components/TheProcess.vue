@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="HowIWork">
     <div class="contentWrapper">
       <SectionUpheader msg="HOW I WORK"></SectionUpheader>
       <SectionHeader msg="THE PROCESS"></SectionHeader>
@@ -36,7 +36,7 @@ section {
   padding-bottom: 4rem;
   .contentWrapper {
     position: relative;
-    width: 55vw;
+    width: 70vw;
     max-width: 1100px;
     margin: auto;
     .blockWrapper {
@@ -44,9 +44,12 @@ section {
     }
   }
 }
-@media screen and (max-width: 1400px) {
-  section .contentWrapper {
-    width: 70vw;
+@media screen and (max-width: 550px) {
+  section .blockWrapper {
+    width: 90vw;
+  }
+  .contentWrapper {
+    width: 90vw !important;
   }
 }
 </style>

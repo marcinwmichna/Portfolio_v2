@@ -16,7 +16,7 @@ export default {
 a {
   text-decoration: none;
   color: #f2f2f2;
-  padding: 0.9rem 3rem;
+  padding: 1.2rem 3rem;
   background-color: #5a6fe0;
 }
 h2 {

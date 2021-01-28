@@ -12,6 +12,7 @@
         viewWebsiteButton="VIEW WEBSITE"
         urlToImage="theWeatherr.png"
         urlToWebsite="https://theweatherrdeploy.herokuapp.com/"
+        urlToDesign=""
       ></RecentProjectsAndDesignsBlockHorizontal>
       <RecentProjectsAndDesignsBlockHorizontal
         mainHeader="RESUME"
@@ -19,8 +20,8 @@
         viewDesignButton="VIEW DESIGN"
         viewWebsiteButton="VIEW WEBSITE"
         urlToImage="resume.png"
-        urlToWebsite="https://www.figma.com/file/kYcT0dBhA1dbPcqozeeUpn/Resume?node-id=0%3A1"
-        urlToDesign="https://marcinwmichna.github.io/Resume/"
+        urlToDesign="https://www.figma.com/file/kYcT0dBhA1dbPcqozeeUpn/Resume?node-id=0%3A1"
+        urlToWebsite="https://marcinwmichna.github.io/Resume/"
       ></RecentProjectsAndDesignsBlockHorizontal>
       <div class="verticalBlocksWrapper">
         <RecentProjectsAndDesignsBlockVertical
@@ -30,6 +31,7 @@
           viewWebsiteButton="VIEW WEBSITE"
           urlToImage="portfolioWebsite.png"
           urlToWebsite="https://marcinwmichna.github.io/portfolio/"
+          urlToDesign=""
         ></RecentProjectsAndDesignsBlockVertical>
         <RecentProjectsAndDesignsBlockVertical
           upHeader="TO BUY"
@@ -38,6 +40,7 @@
           viewWebsiteButton="VIEW WEBSITE"
           urlToImage="shoppingApplication.png"
           urlToWebsite="https://marcinwmichna.github.io/shopping-list/"
+          urlToDesign=""
         ></RecentProjectsAndDesignsBlockVertical>
         <RecentProjectsAndDesignsBlockVertical
           upHeader="BET IT OUT"
@@ -46,6 +49,7 @@
           viewDesignButton="VIEW DESIGN"
           urlToImage="betItOut.png"
           urlToDesign="https://www.figma.com/file/BAqTNG4wFRGQHgyqmLT9eP/Bet-it-out?node-id=0%3A1"
+          urlToWebsite=""
         ></RecentProjectsAndDesignsBlockVertical>
       </div>
     </div>
@@ -64,13 +68,13 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .contentWrapper {
   position: relative;
-  width: 55vw;
+  width: 70vw;
   max-width: 1100px;
   margin: auto;
-  margin-bottom: 20rem;
+  margin-bottom: 9rem;
   margin-top: 7rem;
 
   .blockWrapper {
@@ -84,6 +88,22 @@ export default {
 @media screen and (max-width: 1400px) {
   section .contentWrapper {
     width: 70vw;
+  }
+  .blockWrapper {
+    .verticalBlocksWrapper {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .verticalBlocksWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contentWrapper {
+    width: 90vw !important;
   }
 }
 </style>

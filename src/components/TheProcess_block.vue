@@ -54,23 +54,23 @@
         ></SectionSubheader>
       </div>
     </div>
-    <RegularButton
+    <!-- <RegularButton
       class="contactButton"
       msg="MARCIN.W.MICHNA@GMAIL.COM"
       redirect="#TODO"
-    ></RegularButton>
+    ></RegularButton> -->
   </div>
 </template>
 <script>
 import NavDescription from "@/components/NavDescription.vue";
 import SectionSubheader from "@/components/SectionSubheader.vue";
-import RegularButton from "@/components/RegularButton.vue";
+// import RegularButton from "@/components/RegularButton.vue";
 
 export default {
   components: {
     NavDescription,
     SectionSubheader,
-    RegularButton,
+    // RegularButton,
   },
 };
 </script>
@@ -82,7 +82,8 @@ export default {
   .single_block {
     display: flex;
     flex-wrap: nowrap;
-
+    // width: 40vw;
+    // flex-grow: 1;
     .counter {
       background-image: url("../assets/Ellipse 3.svg");
       background-repeat: no-repeat;
@@ -100,9 +101,10 @@ export default {
     }
 
     .section_text_wrapper {
-      width: 20vw;
+      width: 27vw;
       max-width: 400px;
-      min-width: 320px;
+      min-width: 220px;
+      // width: 100%;
       h2 {
         margin: 0;
       }
@@ -118,6 +120,18 @@ export default {
     text-align: right;
     padding: 0;
     margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .single_block {
+    width: 100%;
+    .section_text_wrapper {
+      width: 80vw !important;
+      max-width: 4400px !important;
+
+      // width: 100% !important;
+      // flex-grow: 1;
+    }
   }
 }
 </style>

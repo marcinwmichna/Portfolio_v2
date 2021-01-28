@@ -13,7 +13,7 @@ export default {
 h2 {
   align-content: center;
   font-family: "Hind", serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.5rem;
   color: #424242;
 }

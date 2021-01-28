@@ -4,6 +4,9 @@
     <Nav></Nav>
     <TheProcess></TheProcess>
     <RecentProjectsAndDesigns></RecentProjectsAndDesigns>
+    <AboutMe></AboutMe>
+    <WhatDoIOffer></WhatDoIOffer>
+    <ContactMe></ContactMe>
   </div>
 </template>
 
@@ -11,6 +14,9 @@
 import Nav from "@/components/Nav.vue";
 import TheProcess from "@/components/TheProcess.vue";
 import RecentProjectsAndDesigns from "@/components/RecentProjectsAndDesigns.vue";
+import AboutMe from "@/components/AboutMe.vue";
+import WhatDoIOffer from "@/components/WhatDoIOffer.vue";
+import ContactMe from "@/components/ContactMe.vue";
 
 export default {
   name: "App",
@@ -18,13 +24,16 @@ export default {
     Nav,
     TheProcess,
     RecentProjectsAndDesigns,
+    AboutMe,
+    WhatDoIOffer,
+    ContactMe,
   },
 };
 </script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
 
 body {
   margin: 0 !important;
@@ -36,5 +45,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   // color: #2c3e50;
+  ::selection {
+    color: rgba(255, 255, 255, 0.979);
+    background: #494949;
+  }
+}
+::v-deep section .contentWrapper {
+  width: 70vw;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 9rem;
+  margin-top: 7rem;
+  display: flex;
+}
+
+@media screen and(max-width:1000px) {
+  html {
+    font-size: 16px;
+  }
 }
 </style>
