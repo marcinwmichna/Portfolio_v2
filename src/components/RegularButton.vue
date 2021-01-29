@@ -22,6 +22,10 @@ export default {
   font-weight: 300;
   font-size: 1.5rem;
   // margin-right: 3rem;
+  :hover {
+    color: #293a96;
+    transition: 100ms linear;
+  }
   a {
     text-decoration: none;
     color: #5a6fe0;

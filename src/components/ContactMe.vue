@@ -10,29 +10,19 @@
         ></SectionSubheader>
         <SectionSubheader msg="YOUR EMAIL ADDRESS"></SectionSubheader>
         <div class="inputBlock">
-          <!-- <SectionSubheader msg="YOUR E-MAIL"></SectionSubheader> -->
-          <!-- <form action="#" method="GET">
-            <input
-              type="text"
-              required="true"
-              id="email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            />
-          </form> -->
-          <FormulateForm>
+          <FormulateForm @submit="submitHandler" #default="{ isLoading }">
             <FormulateInput
               type="email"
               name="email"
               validation="required|email"
               class="inputs"
             />
-            <FormulateInput type="submit" label="CONTACT ME"></FormulateInput>
+            <FormulateInput
+              type="submit"
+              :disabled="isLoading"
+              :label="isLoading ? 'SENDING...' : 'SEND'"
+            ></FormulateInput>
           </FormulateForm>
-
-          <!-- <RegularButton
-            redirect="#TODO"
-            msg="MARCIN.W.MICHNA@GMAIL.COM"
-          ></RegularButton> -->
         </div>
       </div>
       <div class="menuBlock">
@@ -84,14 +74,24 @@ import SectionHeader from "@/components/SectionHeader.vue";
 import SectionUpheader from "@/components/SectionUpheader.vue";
 import RegularButton from "@/components/RegularButton.vue";
 import SectionSubheader from "@/components/SectionSubheader.vue";
+import axios from "axios";
 // import VueFormulate from "@braid/vue-formulate";
 
+const API_URL = "https://email-message.herokuapp.com/messages/";
 export default {
   components: {
     SectionUpheader,
     RegularButton,
     SectionHeader,
     SectionSubheader,
+  },
+  methods: {
+    async submitHandler(data) {
+      await axios.post(API_URL, data);
+      if (API_URL === undefined) {
+        alert(`Thank you, ${data.email}`);
+      }
+    },
   },
 };
 </script>
@@ -133,13 +133,17 @@ export default {
         background-color: #5a6fe0;
         // border-style: inset;
       }
-      ::v-deep button::hover {
-        opacity: 0.6;
+      ::v-deep button:hover {
+        opacity: 0.97;
+        cursor: pointer;
+        transition: 100ms linear;
       }
       ::v-deep .formulate-input-element--submit--label {
         color: white;
       }
-
+      ::v-deep .inputs {
+        width: 100%;
+      }
       ::v-deep input {
         font-family: "Hind", serif;
         box-sizing: border-box;
@@ -178,6 +182,10 @@ export default {
     .footerButton {
       font-size: 1rem;
       margin-bottom: 0.5rem;
+      ::v-deep a:hover {
+        color: #293a96;
+        transition: 100ms linear;
+      }
     }
     .socialBlock {
       display: flex;
@@ -189,6 +197,7 @@ export default {
 }
 #ContactMe {
   background: #f9f9f9;
+  scroll-behavior: smooth;
 }
 .header::before {
   width: 0 !important;

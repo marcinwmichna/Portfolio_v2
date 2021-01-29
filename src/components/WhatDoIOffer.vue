@@ -23,14 +23,12 @@
 import SectionHeader from "@/components/SectionHeader.vue";
 import SectionSubheader from "@/components/SectionSubheader.vue";
 import SectionUpheader from "@/components/SectionUpheader.vue";
-// import NavDescription from "@/components/NavDescription.vue";
 
 export default {
   components: {
     SectionHeader,
     SectionSubheader,
     SectionUpheader,
-    // NavDescription,
   },
 };
 </script>
