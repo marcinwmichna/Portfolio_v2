@@ -27,5 +27,10 @@ h2 {
   font-weight: 300;
   font-size: 1.5rem;
   color: #f2f2f2;
+  :hover {
+    transition: 100ms linear;
+    opacity: 0.97;
+    // opacity: 1.5;
+  }
 }
 </style>

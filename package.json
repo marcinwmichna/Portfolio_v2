@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@braid/vue-formulate": "^2.5.0",
+    "axios": "^0.21.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <Nav msg="Welcome to Your Vue.js App" /> -->
     <Nav></Nav>
     <TheProcess></TheProcess>
     <RecentProjectsAndDesigns></RecentProjectsAndDesigns>
@@ -35,6 +34,9 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0 !important;
   padding: 0 !important;
@@ -44,19 +46,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  // color: #2c3e50;
   ::selection {
     color: rgba(255, 255, 255, 0.979);
     background: #494949;
   }
-}
-::v-deep section .contentWrapper {
-  width: 70vw;
-  max-width: 1100px;
-  margin: auto;
-  margin-bottom: 9rem;
-  margin-top: 7rem;
-  display: flex;
 }
 
 @media screen and(max-width:1000px) {

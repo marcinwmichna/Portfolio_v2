@@ -54,23 +54,16 @@
         ></SectionSubheader>
       </div>
     </div>
-    <!-- <RegularButton
-      class="contactButton"
-      msg="MARCIN.W.MICHNA@GMAIL.COM"
-      redirect="#TODO"
-    ></RegularButton> -->
   </div>
 </template>
 <script>
 import NavDescription from "@/components/NavDescription.vue";
 import SectionSubheader from "@/components/SectionSubheader.vue";
-// import RegularButton from "@/components/RegularButton.vue";
 
 export default {
   components: {
     NavDescription,
     SectionSubheader,
-    // RegularButton,
   },
 };
 </script>
@@ -82,8 +75,7 @@ export default {
   .single_block {
     display: flex;
     flex-wrap: nowrap;
-    // width: 40vw;
-    // flex-grow: 1;
+
     .counter {
       background-image: url("../assets/Ellipse 3.svg");
       background-repeat: no-repeat;
@@ -104,7 +96,6 @@ export default {
       width: 27vw;
       max-width: 400px;
       min-width: 220px;
-      // width: 100%;
       h2 {
         margin: 0;
       }
@@ -128,9 +119,6 @@ export default {
     .section_text_wrapper {
       width: 80vw !important;
       max-width: 4400px !important;
-
-      // width: 100% !important;
-      // flex-grow: 1;
     }
   }
 }
